@@ -14,6 +14,5 @@ const Counter = props => (
 )
 
 const mapStateToProps = state => ({ counter: state.counter })
-const mapDispatchToProps = 
-    dispatch => bindActionCreators({ inc, dec, stepChanged }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ inc, dec, stepChanged }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(Counter)
